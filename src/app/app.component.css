@@ -1,0 +1,31 @@
+h2{
+text-align: center;
+  background-color: dodgerblue;
+
+font-size: 30px;
+
+
+}
+
+ul{
+text-align:center;
+  list-style: none;
+  background-color: aquamarine;
+
+}
+a{
+ margin-right: 30px;
+
+}
+.button{
+
+position: relative;left: 100px;
+}
+
+
+.trigger{
+  color: black;
+  position: relative;right:250px;
+
+
+}

@@ -1,0 +1,37 @@
+<body>
+
+<h2>Mon site web
+
+  <button class="trigger" mat-icon-button [matMenuTriggerFor]="menu"   aria-label="Example icon-button with a menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon >home</mat-icon>
+      <a mat-flat-button href="http://localhost:4200/home"  >Acceuil</a>
+    </button>
+    <button mat-menu-item >
+      <mat-icon>people-arrows</mat-icon>
+      <a mat-flat-button href="http://localhost:4200/page-not-found">Aide et contact</a>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>laptop</mat-icon>
+      <a mat-flat-button href="http://localhost:4200/calculatrice">Calculatrice</a>
+    </button>
+
+  </mat-menu>
+</h2>
+<nav>
+  <ul>
+    <a   [routerLink]="['home']" >Acceuil  </a>
+    <a  [routerLink]="['page-not-found']" >Aide et contact </a>
+    <a  [routerLink]="['calculatrice']" >Calculatrice web </a>
+    <a  [routerLink]="['friends']" >Amis </a>
+
+  </ul>
+
+</nav>
+</body>
+<router-outlet>
+</router-outlet>

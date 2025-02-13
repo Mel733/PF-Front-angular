@@ -1,0 +1,59 @@
+.buttons button{
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;bottom:60px ;left: 40px;
+
+}
+
+body{
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+
+}
+
+ h1{
+  text-align: center;
+  line-height: 100px;
+}
+
+h2{
+  line-height: 100px;
+  background-color: azure;
+width: 250px;
+position: relative;left: 210px;bottom: 150px;
+}
+
+input{
+  width: 150px;
+  line-height: 40px;
+  position: relative;left:40px;top: 30px;
+  font-size: 20px;
+
+
+
+}
+
+.error{
+ color: red;
+background-color: black;
+  width: 250px;
+ line-height: 40px;
+  position: relative;left:510px;bottom:140px;
+
+
+}
+
+.display{
+ background-color: darkred;
+width: 500px;
+position: relative;left:450px
+}
+
+
+
+
+
+

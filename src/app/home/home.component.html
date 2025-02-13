@@ -1,0 +1,51 @@
+<h1>Bienvenue dans l'acceuil</h1>
+<body>
+<mat-tab-group>
+  <mat-tab  label="Présentation">
+
+  </mat-tab>
+
+  <mat-tab  label="Calendrier">
+    <mat-card class="demo-inline-calendar-card">
+      <mat-calendar [(selected)]="selected"></mat-calendar>
+    </mat-card>
+
+  </mat-tab>
+
+  <mat-tab  label="Inscription">
+    <h2>Inscription :</h2>
+    <div class="example-container">
+      <mat-form-field>
+              <mat-label>Entrez un mot de passe</mat-label>
+        <input matInput [type]="hide() ? 'password' : 'text'" />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="clickEvent($event)"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide()"
+        >
+          <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+
+      </mat-form-field>
+
+      <div class="example-container">
+        <mat-form-field>
+          <mat-label>Entrez votre email</mat-label>
+          <input
+            matInput
+            placeholder="pat@example.com"
+            [formControl]="email"
+            (blur)="updateErrorMessage()"
+            required
+          />
+          @if (email.invalid) {
+            <mat-error>{{errorMessage()}}</mat-error>
+          }
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+</body>

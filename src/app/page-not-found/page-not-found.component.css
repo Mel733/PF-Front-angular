@@ -1,0 +1,17 @@
+body{
+  background: midnightblue;
+color: azure;
+ height: 1000px;
+  text-align: center;
+}
+
+h3{
+ align-content:center;
+ font-size: 100px;
+}
+
+mat-spinner{
+  position: relative;left: 625px;
+
+}
+

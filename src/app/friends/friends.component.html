@@ -1,0 +1,14 @@
+<ul>
+  @for (friend of friends; track friend.name ; let i = $index) {
+    <li>
+      <input (keyup)="changeUpdateName($event,i)" [value]="friend.name" />
+      <a [routerLink]="['/','friends',friend.id]">Read</a>
+      <button (click)="deleteFriend(friend.id)" >Delete</button>
+      <button (click)="updateFriend(friend.id,friend)" >Update</button>
+    </li>
+  } @empty {
+    <li>Vous n'avez plus d'amis.</li>
+  }
+</ul>
+<button (click)="createFriend()">Create</button>
+<input [value]="createName" (keyup)="changeCreateName($event)" />
